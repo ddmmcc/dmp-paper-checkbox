@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>dmp-paper-checkbox demo</title>
+
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <script type="module">
+      import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
+      import '@polymer/iron-demo-helpers/demo-snippet';
+    </script>
+
+    <script type="module" src="../dmp-paper-checkbox.js"></script>
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic dmp-paper-checkbox demo (new customProp --paper-checkbox-radius )</h3>
+      <demo-snippet>
+        <template>
+          <style>
+            dmp-paper-checkbox {
+              --paper-checkbox-size: 40px;
+              --paper-checkbox-radius: 10px;
+            }
+          </style>
+          <dmp-paper-checkbox id="el"></dmp-paper-checkbox>
+          <script>
+            const el = document.querySelector("#el");
+            el.addEventListener("checked-changed", (e) => {
+              console.log(e);
+            }); 
+          </script>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>
