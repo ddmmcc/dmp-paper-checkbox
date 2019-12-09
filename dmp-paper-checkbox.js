@@ -69,35 +69,35 @@ class DmpPaperCheckbox extends PolymerElement {
   }
 
   addOwnKeyBinding(eventString, handlerName) {
-    this.$.check.addOwnKeyBinding(eventString, handlerName);
+    return this.$.check.addOwnKeyBinding(eventString, handlerName);
   }
 
   ensureRipple(optTriggeringEvent) {
-    this.$.check.ensureRipple(optTriggeringEvent);
+    return this.$.check.ensureRipple(optTriggeringEvent);
   }
 
   getRipple() {
-    this.$.check.getRipple();
+    return this.$.check.getRipple();
   }
 
   hasRipple() {
-    this.$.check.hasRipple();
+    return this.$.check.hasRipple();
   }
 
   hasValidator() {
-    this.$.check.hasValidator();
+    return this.$.check.hasValidator();
   }
 
   keyboardEventMatchesKeys(event, eventString) {
-    this.$.check.keyboardEventMatchesKeys(event, eventString);
+    return this.$.check.keyboardEventMatchesKeys(event, eventString);
   }
 
   removeOwnKeyBindings() {
-    this.$.check.removeOwnKeyBindings();
+    return this.$.check.removeOwnKeyBindings();
   }
 
   validate(obj) {
-    this.$.check.validate(obj);
+    return this.$.check.validate(obj);
   }
 
 }
